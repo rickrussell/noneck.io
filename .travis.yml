@@ -1,0 +1,17 @@
+language: go
+install: go get -v github.com/spf13/hugo
+script:
+  - hugo -t nix -b "http://noneck.io" -D
+  - python --version
+  - ls -lah public/
+  - pwd
+before_deploy: pip install --user awscli
+deploy:
+- provider: script
+  script: ~/.local/bin/aws s3 sync --delete --acl public-read public/ s3://noneck.io/ --include "public/*"
+  skip_cleanup: true
+  on:
+    branch: master
+notifications:
+    email:
+        on_failure: always
