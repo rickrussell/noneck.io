@@ -1,0 +1,48 @@
+baseurl = "http://noneck.io/"
+languageCode = "en-us"
+disqusShortname = "oipunx"
+publishdir = "public"
+paginate = 3
+themesdir = "themes"
+theme = "nix"
+metaDataFormat = "toml"
+pygmentsStyle = "monokai"
+canonifyurls = true
+
+[author]
+    primary = "Rick Russell"
+
+[taxonomies]
+    tag = "tags"
+    tutorial = "tutorials"
+
+[permalinks]
+    post = "/:year/:month/:title/"
+
+[params]
+    About = "Father, Husband, Geek, and Speed Metal Punk.  I like Linux, Radios, Motorcycles and shit that goes BOOM!! (guns)"
+
+    # Social buttons for sidebar
+    GoogleplusID = "103885281630795731100"
+    GithubID = "rickrussell"
+    TwitterID = "oipunx"
+    LinkedInID = "noneck"
+    Email = "oipunx@gmail.com"
+    disqusShortname = "oipunx"
+    #GoogleAnalytics = ""
+
+    #Nix Theme Requirements
+    Name = "noneck.io"
+    ProfilePicture = "img/smugmug.png"
+    HeaderUsername = ""
+    HeaderHostname = "noneck.io"
+
+[menu]
+  [[menu.header]]
+    Name = "~/about"
+    weight = 0
+    url = "/about/"
+  [[menu.header]]
+    Name = "~/posts"
+    weight = 1
+    url = "/post/"
