@@ -7,4 +7,8 @@ aws s3 sync public/ s3://my_domain.io --delete --acl public-read --region=us-wes
 ```
 
 Both upload ```public/css/nix.css``` after building the site w/ ```hugo -t nix -D -b "http://my_domain.io"```
-except for some reason, the commands on travis delete and don't upload public/css/nix.css:wq
+except for some reason, the commands on travis delete and don't upload public/css/nix.css
+
+
+### TODO:
+* Override layouts directory and checkout latest theme every time.
