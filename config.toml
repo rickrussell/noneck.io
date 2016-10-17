@@ -34,7 +34,7 @@ canonifyurls = true
     #Nix Theme Requirements
     Name = "noneck.io"
     ProfilePicture = "img/smugmug.png"
-    HeaderUsername = ""
+    HeaderUsername = "noneck"
     HeaderHostname = "noneck.io"
 
 [menu]
